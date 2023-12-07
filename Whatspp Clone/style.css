@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(252, 246, 229, 0.993);
+    width: 100%;
+    height: 100vh;
+    font-size: 20px;
+}
+
+
+/* Nav Bar design */
+
+.navbar_container{
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(252, 246, 229, 0.541);
+    padding: 25px;
+}
+
+.logo{
+    height: 40px;
+}
+
+.logo img{
+    height: 100%;
+    width: auto;
+}
+
+.features_container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+.features{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    align-items: center;
+}
+
+.features::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    background-color:  rgb(0, 255, 0);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease-in-out
+}
+
+.features:hover::after{
+    transform: scaleX(1);
+}
+
+.features img{
+    transform: rotate(-90deg);
+    height: 10px;
+    align-items: center;
+
+}
+
+.slider{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    height: 40px;
+}
+
+.slider::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    background-color:  rgb(0, 255, 0);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease-in-out}
+
+.slider:hover::after{
+    transform: scaleX(1);
+}
+
+.download{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    align-items: center;
+}
+
+
+.download img{
+    height: 10px;
+    align-items: center;
+}
+
+
+.navbar_container button{
+    background-color: #25D366;
+    height: 30px;
+    width: 100px;
+    border-radius: 25px;
+}
+
+
+
+/* Section 1 design */
+
+
+
+.section_1{
+    height: 600px;
+    width: 100%;
+    
+}
+
+.section_box{
+    height: 100%;
+    margin: 15px;
+    border-radius: 30px;
+    background-image: url(assets/images/MaaBeti.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+
+.box_1{
+    color: white;
+    width: 30%;
+}
+
+.box_1 h1{
+    font-size: 80px;
+    
+}
+
+.box_1 p{
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+
+.box_1 button{
+    margin-top: 20px;
+    background-color: #25D366;
+    height: 30px;
+    width: 100px;
+    border-radius: 25px;
+}
+
+.box_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_2 img{
+    width: 400px;
+}
+
+
+/* section 2 */
+
+.section_2 img{
+    height: 210px;
+    margin: 15px 70px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+
+/* section_3 */
+
+
+.section_3{
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    margin: 25px 150px;
+    padding: 60px;
+}
+
+
+/* section_4 */
+
+.section_4{
+        height: 210px;
+        margin: 15px 70px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+}
+
+
+/* section_5 */
+
+.section_5{
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    margin: 50px 0;
+}
+
+
+.section_5 .box_1{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section_5 .box_1 h1{
+    font-size: 65px;
+    margin: 15px;
+}
+
+.section_5 .box_1 p{
+    font-size: 20px;
+    margin: 15px;
+}
+
+.section_5 .box_1 a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 15px;
+}
+
+.section_5 .box_1 img{
+    transform: rotate(180deg);
+    width: 8px;
+}
+
+
+.section_5 .box_2{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.section_5 a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+
+.section_5 a::after{
+    color: #25D366;
+    transition: 0.3ms ease-in-out;
+    opacity: 0;
+    
+}
+
+.section_5 a:hover::after{
+    opacity: 100%;
+
+}
+
+.section_5 img{
+    z-index: 1;
+    box-shadow: 100px black ;
+}
+
+
+/* footer section */
+
+.footer_section{
+    background-color: #075E54;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+}
+
+.box1{
+    height: 100%;
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons{
+    height: 70px;
+}
+
+.box1 button p{
+    z-index: 1;
+}
+
+.box1 button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 220px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 25px;
+    background-color: #25D366;
+
+}
+
+.box1 button::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    border-radius: 25px;
+    background-color:  white;
+    transform: scaleX(0);
+    transform-origin: bottom;
+    transition: all 0.3s ease-in-out;
+    z-index: 0;
+}
+
+.box1 button:hover::after{
+    transform: scaleX(1);
+}
+
+.box2{
+    color: white;
+    font-size: 20px;
+}
+
+.box2 h3{
+    font-size: 15px;
+    font-weight: 300;
+    padding-bottom: 25px;
+}
+
+
+.box3 h3{
+    font-size: 15px;
+    font-weight: 300;
+    padding-bottom: 25px;
+}
+
+.box4 h3{
+    font-size: 15px;
+    font-weight: 300;
+    padding-bottom: 25px;
+}
+
+.box5 h3{
+    font-size: 15px;
+    font-weight: 300;
+    padding-bottom: 25px;
+}
+
+
+.box3{
+    color: white;
+    font-size: 20px;
+}
+
+
+
+.box4{
+    color: white;
+    font-size: 20px;
+}
+
+
+
+.box5{
+    color: white;
+    font-size: 20px;
+}
+
+
+.footer_section .slider_2{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+}
+
+
+.slider_2::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    background-color:  white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease-in-out
+}
+
+.slider_2:hover::after{
+    transform: scaleX(1);
+}
